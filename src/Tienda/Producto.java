@@ -1,12 +1,11 @@
 package Tienda;
 
 import java.util.Date;
-//import java.util.Random;
 
 public class Producto {
     private double codigo;
     private float IVA;
-    public float precio;
+    private float precio;
     private String nombreProducto;
     
 
@@ -47,12 +46,5 @@ public class Producto {
         float total = ((getPrecio()*getIVA())+getPrecio());
         return total;
     }
-    /*
-    public float precioProducto(){
-        Random in = new Random();
-        int precio;
-        precio = in.nextInt(11);
-        return (float)precio;
-    }
-    */
+    
 }
